@@ -16,7 +16,7 @@ module "aws-functions" {
 
 policy "enforce-mandatory-tags" {
   source = "./enforce-mandatory-tags.sentinel"
-  enforcement_level = "mandatory"
+  enforcement_level = "soft-mandatory"
 }
 
 policy "restrict-current-ec2-instance-type" {
