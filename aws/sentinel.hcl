@@ -19,14 +19,9 @@ policy "enforce-mandatory-tags" {
   enforcement_level = "soft-mandatory"
 }
 
-policy "restrict-current-ec2-instance-type" {
-  source = "./restrict-current-ec2-instance-type.sentinel"
-  enforcement_level = "advisory"
-}
-
 policy "restrict-ec2-instance-type" {
   source = "./restrict-ec2-instance-type.sentinel"
-  enforcement_level = "advisory"
+  enforcement_level = "soft-mandatory"
 }
 
 policy "restrict-egress-sg-rule-cidr-blocks" {

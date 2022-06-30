@@ -30,8 +30,7 @@ This function does not print anything.
 Here is an example of calling this function, assuming that the aws-functions.sentinel file that contains it has been imported with the alias `aws`:
 ```
 resource_types = [
-  "aws_s3_bucket",
-  "aws_instance",
+  "aws_instance"
 ]
 
 allAWSResourcesWithStandardTags =
