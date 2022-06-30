@@ -11,7 +11,7 @@ import "aws-functions" as aws
 
 # List of resources that are required to have name/value tags
 param resource_types default [
-  "aws_instance"
+  "aws_instance", 
 ]
 
 # List of mandatory tags
