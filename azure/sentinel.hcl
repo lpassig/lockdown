@@ -14,6 +14,11 @@ module "azure-functions" {
     source = "./azure-functions/azure-functions.sentinel"
 }
 
+policy "less-than-100-month" {
+  source = "./less-than-100-month.sentinel"
+  enforcement_level = "soft-mandatory"
+}
+
 policy "enforce-mandatory-tags" {
     source = "./enforce-mandatory-tags.sentinel"
     enforcement_level = "advisory"
